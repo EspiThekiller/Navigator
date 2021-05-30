@@ -1,2 +1,5 @@
 URL=https://www.deportes.ua.es
 CODE=setInterval(function(){var e=window.frames[1][1].document.getElementsByClassName("aspNetDisabled ListaDesplegable");1<=e.length&&(e[0].disabled=!1)},500);
+
+URL=https://www.google.com
+CODE=document.getElementById("SIvCob").innerHTML="¡Bienvenido al navegador de Espi!";
