@@ -1,9 +1,16 @@
 URL=https://www.deportes.ua.es
-CODE=setTimeout(function() { 	
-		alert("hola");
+CODE=function selectorEnable(selector) {
+	selector.disabled = false;
+}
+
+function pageLoaded() {
+	setTimeout(function() { 		
 		var elem = window.frames[1][1].document.getElementsByClassName("aspNetDisabled ListaDesplegable");
 		if(elem.length < 1)
 			pageLoaded();
 		else
 			selectorEnable(elem[0]);
 	}, 500);
+}
+
+window.addEventListener('load', pageLoaded);
